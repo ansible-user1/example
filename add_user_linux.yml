@@ -1,0 +1,10 @@
+---
+  - name: Add a user
+    hosts: all
+    gather_facts: false
+    tasks:
+      - name: Add User
+        user:
+          name: "{{ morpheus['customOptions']['username'] }}"
+          password: "Password!234"
+          state: present
