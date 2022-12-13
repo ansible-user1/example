@@ -1,0 +1,8 @@
+- name: copy file
+  hosts: all
+  become: true
+  tasks:
+    - name: install index.html
+      copy:
+        content: "welcome to the apache web server\n"
+        dest: /var/index.html
