@@ -9,5 +9,5 @@
       - name: Add User
         user:
           name: "{{ morpheus['customOptions']['user'] }}"
-          password: "{{ lookup('cypher','secret=password/10/user') }}"
+          password: "Password!234"
           state: present
