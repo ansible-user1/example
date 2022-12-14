@@ -8,7 +8,7 @@
     tasks:
       - name: Add User
         user:
-          name: "{{ morpheus['customOptions']['user'] }}"
+          name: "{{ morpheus['customOptions']['username'] }}"
           password: "Password!234"
           state: present
           append: yes
