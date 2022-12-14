@@ -13,3 +13,6 @@
           state: present
           append: yes
           createhome: yes
+      - name: This executes, fails, and the failure is ignored
+          ansible.builtin.command: /bin/true
+          ignore_unreachable: true
